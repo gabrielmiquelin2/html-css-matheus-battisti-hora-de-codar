@@ -1,0 +1,29 @@
+/* Integração inicial */
+h1{
+  color: blue;
+}
+
+/* Comentários com CSS */
+
+#title{
+ color: green;
+}
+
+.coco{
+  background-color: red;
+  font-size: 31px;
+  color: black;
+}
+
+/* Dois elementos, uma regra */
+p, .title-smal{
+  color: darkmagenta;
+  font-size: 20px;
+}
+
+/* background-image */
+.background-image{
+  background-image: url("../teoria/img/meteoro.jpg");
+  padding: 30px;
+  color: aliceblue;
+}
