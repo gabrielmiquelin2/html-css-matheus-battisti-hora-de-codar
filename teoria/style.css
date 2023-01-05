@@ -10,9 +10,9 @@ h1{
 }
 
 .coco{
-  background-color: rgb(0, 0, 0);
+  background-color: rebeccapurple;
   font-size: 31px;
-  color: black;
+  color: rgb(249, 249, 249);
 }
 
 /* Dois elementos, uma regra */
@@ -26,4 +26,183 @@ p, .title-smal{
   background-image: url("../teoria/img/meteoro.jpg");
   padding: 30px;
   color: aliceblue;
+}
+
+
+/* Largura e altura */
+.width-height{
+  width: 200px;
+  height: 100px;
+  background-color: red;
+}
+
+/* Padding */
+.padding{
+  background-color: pink;
+  padding: 20px;
+}
+
+/* Margin */
+.margin{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin: 30px;
+}
+
+.borda{
+  border: 3px solid red;
+  width: 50px;
+  height: 100px;
+  padding: 50px;
+  margin: 45px;
+
+}
+
+/* Raio da borda */
+.border-radius{
+width: 200px;
+height: 200px;
+background-color: red;
+border: 3px dashed blueviolet;
+border-radius: 15px;
+}
+
+/* Cores */
+.hex, .rgb, .hsl{
+  width: 50px;
+  height: 50px;
+  margin: 10px ;
+}
+
+.hex{
+  background-color: #09af;
+}
+
+.rgb{
+  background-color: rgb(123, 45, 21);
+}
+
+.hsl{
+  background-color: hsl(100, 20%, 50%);
+}
+
+/* Center */
+.center{
+  text-align: center;
+}
+
+p{
+  font-size: 25px;
+}
+
+/* Decoration */
+.underline{
+  text-decoration: underline;
+}
+
+.line{
+  text-decoration: line-through;
+}
+
+.fonte-pequena{
+  font-size: 15px;
+}
+
+.lower{
+  text-transform: lowercase;
+}
+
+.upper{
+  text-transform: uppercase;
+}
+
+/* Alteração de fonte */
+.serif{
+   font-family: Georgia;
+}
+
+.sans-serif{
+ font-family: sans-serif;
+}
+
+.cursive{
+  font-family: cursive;
+}
+/* Display */
+.inline{
+  width: 50px;
+  height: 50px;
+  background-color:aquamarine ;
+  margin: 5px;
+  display: inline-block;
+
+}
+
+.block{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color:rgb(174, 255, 127) ;
+  margin: 5px;
+}
+
+/* ocultando elemento */
+.invisivel{
+  display: none;
+}
+/* Position */
+.relative, .absolute, .fixed{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+}
+
+.relative{
+  background-color: blanchedalmond;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.absolute{
+  background-color: rgb(49, 160, 49);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.fixed{
+  background-color: #434;
+  position: fixed;
+  top: 100px;
+  left: 45px;
+}
+
+/* relative com absolute */
+.relative-2{
+  width: 300;
+  height: 300px;
+  border: 1px solid red;
+  position: relative;
+}
+
+.absolute-1,.absolute-2{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 0, 251);
+  position: absolute;
+}
+
+.absolute-1{
+  top: 10px;
+  left: 10px
+  
+}
+
+.absolute-2{
+  bottom: 10px;
+  right: 10px;
+  
 }
