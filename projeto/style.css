@@ -13,8 +13,8 @@ body{
 
 /* Apresentação do Evento */
 .aboud-container{
-    flex: 1.4;  /*Lado esquerdo 40% maior que o for*/
-    padding: 2rem 4rem;/*rem(nos da adptação a telas responsivas) ele é relativo a uma medida*/
+  flex: 1.4;  /*Lado esquerdo 40% maior que o for*/
+  padding: 2rem 4rem;/*rem(nos da adptação a telas responsivas) ele é relativo a uma medida*/
 }
 
 .brand{
@@ -26,7 +26,7 @@ body{
 
 .brand img{
   height: 50px;
-  margin-right: .6rem;/*Afastando o "sass week" da logo*/
+  margin-right: 0.6rem;/*Afastando o "sass week" da logo*/
 }
 
 .exclusive{/*WEBINAR EXCLUSIVO*/
@@ -66,7 +66,164 @@ body{
   gap: 1rem;/*Deixa um espaçamento entre as imagens*/
 }
 
+.user-card{
+  border: 2px solid #ccc;/*Borda nos nomes das imagens*/
+  padding: 1rem;/*Para Afastar um pouco os elementos da borda*/
+  width: 180px;/*Largura*/
+  text-align: center;/*Texto no centro*/
+}
+
+.user-card img{
+  width: 120px;/*Largura limite */
+  border-radius: 50%;/*Arredondando as imagens*/
+  margin-bottom:1rem;/*Para afastar a imagem de suas respectivas descrições*/
+}
+
+.user-card .user-name{
+font-weight: bold;/*Negrito*/
+margin-bottom: 0.6rem;/*Afastando Seu nome de sua profissão*/
+}
+
+.user-card .user-role{
+ color: #aaa;
+ font-size: 0.9rem;
+}
+
 /* For */
 .form-container{
   flex: 1;
+  background-image: url(img/pattern.png);
+  background-size: cover;/*Mostrar a imagem por completo na area que tenho disponivel*/
+  color: #fff;
+}
+
+.form-inner {
+  margin: 3rem;/*Afastar da borda exterior*/
+  padding: 3rem;/*Afastar da borda interior*/
+  border: 2px solid #fff; /*Borda em volta do formulário*/
+  text-align: center;
+  display: flex;/*Coloco um ao lado do outro*/
+  flex-direction: column;/*Agora está UM ABAIXO DO OUTRO*/
+  align-items: center;/*Centraliza os elementos*/
+}
+
+.form-inner h3{
+  font-size: 2rem;/*Almento do tamanho da fonte*/
+  margin-bottom:1rem;/*Afastando o "Se inscreva" do conteúdo inferior*/
+}
+
+.form-inner p {
+  margin-bottom: 1rem;/*Afastando do conteúdo inferior*/
+}
+
+.register-form{
+  display: flex;/*Coloco um ao lado do outro*/
+  flex-direction: column;/*Agora está UM ABAIXO DO OUTRO*/
+  gap: 0.5rem;/*Espaçamento entre os itens do formulário*/
+  margin-bottom: 2rem;/*Afastando do conteúdo inferior*/
+}
+
+.name-container{
+  display: flex;/*Itens do formulário (nome, email...) um ao lado do outro*/
+  gap: 0.5rem;/*Afastando os itens do formulário na horizontal*/
+}
+
+.register-form input{
+  padding: 0.8rem 0.6rem;/*Mariores espaçamento nos itens do formulario*/
+  border: none;
+  border-radius: 3px;/*Arredondando as bordas*/
+}
+
+.email{
+  min-width: 100%;/*Determinei a Largura minima*/
+}
+
+.register-form input[type="submit"]{/*para atingi somente o "submit"*/
+   /*Estilizando o botão "CADASTRAR"*/
+   background-color: transparent;
+   color: #fff;
+   border: 2px solid #fff;
+   font-size: 1.1rem;
+   font-weight: bold;
+   cursor: pointer;/*Ao passar o mouse fica com uma "mãozinha"*/
+   transition: 0.5s;
+}
+
+.register-form input[type="submit"]:hover{/*Quando passar o mouse encima do botão cadastrar ele muda de cor*/
+   background-color: #fff;
+   color: #0075ff;
+}
+
+.benefits{
+  text-align: left;/*Alinhando os textos dos benefios há esquerda*/
+  align-self: start;/*Coloquei o alinhamento pro inicio ou seja mais para esquerda*/
+}
+
+.benefits h4{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.benefits ul {
+  list-style-position:  inside;/*Para tudo respeitar o meu alinhamento*/
+}
+
+.benefits li{
+  margin-bottom: 0.5rem;/*Afastando do conteúdo inferior*/
+}
+
+/*RESPONSIVO*/
+@media (max-width: 450px){
+ body{
+  flex-direction: column;
+ }
+
+ .aboud-container{
+  padding: 2rem;
+  padding-bottom: 0;
+ }
+
+ .aboud-container h2{
+  font-size: 3rem;
+ }
+
+ .exclusive, .date{
+  font-size: 1.4rem;
+ }
+
+ .description{
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+ }
+
+ .users-container{
+  flex-direction: column;
+ }
+
+ .user-card{
+  width: 100%;
+  padding: 2rem;
+ }
+
+ .user-card img{
+   width: 180px;
+
+ }
+
+ .user-card, .user-name{
+  font-size: 1.6rem;
+ }
+
+ .user-card, .user-role{
+  font-size: 1.4rem;
+ }
+
+ .form-inner{
+  padding: 2rem;
+  margin: 2rem;
+ }
+
+ .register-form, .name-container{
+  gap: 1rem;
+ }
 }
