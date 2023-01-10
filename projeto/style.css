@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family:  "Roboto";
+  
 } 
 
 body{
@@ -13,7 +14,7 @@ body{
 
 /* Apresentação do Evento */
 .aboud-container{
-  flex: 1.4;  /*Lado esquerdo 40% maior que o for*/
+  flex: 1.4;  /*Lado esquerdo 40% maior que o form*/
   padding: 2rem 4rem;/*rem(nos da adptação a telas responsivas) ele é relativo a uma medida*/
 }
 
@@ -37,7 +38,7 @@ body{
   margin-bottom: 1rem;/*Margin embaixo para afastar dos textos inferiores*/
 }
 
-.aboud-container h2{
+.aboud-container, h2 {
    font-size: 2.4rem;/*"Aprenda a criar um software para gerar renda" aumentando a fonte*/
    max-width: 500px; ;/*Estipulando uma largura máxima(daqui ele não passa)*/
    margin-bottom: 1rem;/*Margin embaixo para afastar dos textos inferiores*/
@@ -49,13 +50,13 @@ body{
   margin-bottom: 1rem;/*Margin embaixo para afastar dos textos inferiores*/
 }
 
-.description{
+.description {
   max-width: 500px;/*Largura máxima (textos de cima e de baixo ficam alinhados ou seja determina seu fim)*/
   margin-bottom: 1rem;/*Margin embaixo para afastar dos textos inferiores*/
-  line-height: 1.4rem;/*Aumenta a altura da linha ou seja seu espaçamento entre linhas*/
+  line-height: 1.5rem;/*Aumenta a altura da linha ou seja seu espaçamento entre linhas*/
 }
 
-.aboud-container h4{/*"Palestrantes"*/
+.aboud-container, h4{/*"Palestrantes"*/
   font-size: 1.4rem;
   margin-bottom: 1rem;/*Margin embaixo para afastar das imagens abaixo*/
 }
@@ -89,6 +90,7 @@ margin-bottom: 0.6rem;/*Afastando Seu nome de sua profissão*/
  font-size: 0.9rem;
 }
 
+
 /* For */
 .form-container{
   flex: 1;
@@ -112,7 +114,7 @@ margin-bottom: 0.6rem;/*Afastando Seu nome de sua profissão*/
   margin-bottom:1rem;/*Afastando o "Se inscreva" do conteúdo inferior*/
 }
 
-.form-inner p {
+.form-inner p{
   margin-bottom: 1rem;/*Afastando do conteúdo inferior*/
 }
 
@@ -149,14 +151,15 @@ margin-bottom: 0.6rem;/*Afastando Seu nome de sua profissão*/
    transition: 0.5s;
 }
 
-.register-form input[type="submit"]:hover{/*Quando passar o mouse encima do botão cadastrar ele muda de cor*/
+.register-form  input[type="submit"]:hover{/*Quando passar o mouse encima do botão cadastrar ele muda de cor*/
    background-color: #fff;
    color: #0075ff;
 }
 
 .benefits{
   text-align: left;/*Alinhando os textos dos benefios há esquerda*/
-  align-self: start;/*Coloquei o alinhamento pro inicio ou seja mais para esquerda*/
+  /* align-self: start;Coloquei o alinhamento pro inicio ou seja mais para esquerda */
+  align-items: center;
 }
 
 .benefits h4{
@@ -165,7 +168,7 @@ margin-bottom: 0.6rem;/*Afastando Seu nome de sua profissão*/
 }
 
 .benefits ul {
-  list-style-position:  inside;/*Para tudo respeitar o meu alinhamento*/
+  list-style-position:inside;/*Para tudo respeitar o meu alinhamento*/
 }
 
 .benefits li{
